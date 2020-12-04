@@ -12,7 +12,7 @@ namespace Kalendar
             //int month = int.Parse(Console.ReadLine());
             //Console.WriteLine("Year ");
             //int year = int.Parse(Console.ReadLine());
-            int m = 1;
+            int m = 12;
             int y = 2020;
             var month = new DateTime(y, m, 1);
             List<int> result = new List<int> { };
@@ -67,12 +67,11 @@ namespace Kalendar
                     }
                 }
             }
-            
+
             foreach (var x in result)
             {
                 Console.WriteLine(x);
             }
-
             Console.Write("\nDone!\nPress and key to exit...");
             Console.ReadKey();
 
